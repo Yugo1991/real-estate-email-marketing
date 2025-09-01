@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Templates Portfolio</title>
+  <link rel="stylesheet" href="emails.css">
+</head>
+<body>
+  <h1>Real Estate Email Templates</h1>
+  <div class="email-container">
+    
+    <div class="email-card">
+      <div class="email-title">New Listing Email</div>
+      <iframe src="emails/new-listing.html"></iframe>
+    </div>
+
+    <div class="email-card">
+      <div class="email-title">Open House Invite</div>
+      <iframe src="emails/open-house.html"></iframe>
+    </div>
+
+    <div class="email-card">
+      <div class="email-title">Market Update Newsletter</div>
+      <iframe src="emails/market-update.html"></iframe>
+    </div>
+
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.email-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        window.open(card.querySelector('iframe').src, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
