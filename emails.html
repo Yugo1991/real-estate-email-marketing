@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Templates Portfolio</title>
+  <link rel="stylesheet" href="emails.css">
+</head>
+<body>
+  <h1>Real Estate Email Templates</h1>
+  <div class="email-container">
+
+  <div class="email-card">
+    <div class="email-header">New Listing Email</div>
+    <div class="email-description">
+      A sleek announcement email showcasing a featured property with images, price, and contact details.
+    </div>
+    <iframe src="emails/new-listing.html"></iframe>
+    <div class="email-footer">
+      <a href="emails/new-listing.html" target="_blank">View Full Email</a>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header">Open House Invite</div>
+    <div class="email-description">
+      A mobile-friendly invitation for an upcoming open house event with RSVP option.
+    </div>
+    <iframe src="emails/open-house.html"></iframe>
+    <div class="email-footer">
+      <a href="emails/open-house.html" target="_blank">View Full Email</a>
+    </div>
+  </div>
+
+  <div class="email-card">
+    <div class="email-header">Market Update Newsletter</div>
+    <div class="email-description">
+      A monthly real estate newsletter with local market stats and featured listings.
+    </div>
+    <iframe src="emails/market-update.html"></iframe>
+    <div class="email-footer">
+      <a href="emails/market-update.html" target="_blank">View Full Email</a>
+    </div>
+  </div>
+
+</div>
+
+
+  <script>
+    const cards = document.querySelectorAll('.email-card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        window.open(card.querySelector('iframe').src, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>
