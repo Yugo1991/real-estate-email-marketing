@@ -74,6 +74,27 @@ iframe {
   background: #1e40af;
 }
 
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 30px;           /* modern browsers */
+  column-gap: 30px;    /* extra safety */
+}
+
+.social-icons i {
+  font-size: 40px;
+  color: #333;
+}
+
+/* Fallback if gap is ignored (some environments) */
+.social-icons i:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+
+
 .back-home {
   text-align: center;
   margin: 20px 0;
