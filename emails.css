@@ -63,7 +63,7 @@ iframe {
   display: inline-block;
   padding: 10px 20px;
   border-radius: 8px;
-  background: #2563eb;
+  background: #2c3e50;
   color: #fff;
   font-size: 0.9rem;
   text-decoration: none;
@@ -71,7 +71,7 @@ iframe {
 }
 
 .email-footer a:hover {
-  background: #1e40af;
+  background: #2c3e50;
 }
 
 
@@ -94,7 +94,6 @@ iframe {
 
 
 
-
 .back-home {
   text-align: center;
   margin: 20px 0;
@@ -107,7 +106,7 @@ iframe {
   background: #2563eb;
   color: #fff;
   font-size: 0.95rem;
-  text-decoration: none;
+  text-decoration: none !important;
   font-weight: 500;
   transition: background 0.3s, transform 0.2s;
 }
